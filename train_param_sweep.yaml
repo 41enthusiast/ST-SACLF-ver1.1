@@ -1,0 +1,25 @@
+program: train_standalone_param_sweep.py
+
+method: bayes
+
+metric:
+  name: val_accuracy
+  goal: maximize
+
+parameters:
+  dropout: 
+    min: 0.0
+    max: 0.5
+  wd: 
+    min: 1.0e-6
+    max: 1.0e-3
+  learning_rate: 
+    min: 1.0e-4
+    max: 0.01
+  loss_fn: 
+    values: [cross_entropy, focal_loss]
+  reg_loss_term: 
+    values: [L2, L1]
+            
+        
+    

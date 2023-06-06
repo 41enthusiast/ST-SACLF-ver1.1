@@ -1,0 +1,16 @@
+program: train_standalone.py
+
+method: grid
+
+metric:
+  name: val_accuracy
+  goal: maximize
+
+parameters:
+  p2: 
+    values: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+  p1:  
+    values: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+            
+        
+    
