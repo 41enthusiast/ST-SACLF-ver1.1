@@ -1,0 +1,81 @@
+/home2/txlx81/new_repos/mv_test1/lib/python3.8/site-packages/torch/utils/data/dataloader.py:478: UserWarning: This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 4, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+wandb: Currently logged in as: mridulav (use `wandb login --relogin` to force relogin)
+wandb: wandb version 0.13.4 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in /home2/txlx81/new_repos/kaokore-visapp/wandb/run-20221019_200723-1hvdb693
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run serene-spaceship-67
+wandb: ⭐️ View project at https://wandb.ai/mridulav/stcluster-classifier
+wandb: 🚀 View run at https://wandb.ai/mridulav/stcluster-classifier/runs/1hvdb693
+/home2/txlx81/new_repos/mv_test1/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/callback_connector.py:96: LightningDeprecationWarning: Setting `Trainer(progress_bar_refresh_rate=0)` is deprecated in v1.5 and will be removed in v1.7. Please pass `pytorch_lightning.callbacks.progress.TQDMProgressBar` with `refresh_rate` directly to the Trainer's `callbacks` argument instead. Or, to disable the progress bar pass `enable_progress_bar = False` to the Trainer.
+  rank_zero_deprecation(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Global seed set to 42
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name  | Type    | Params
+----------------------------------
+0 | model | AttnVGG | 21.2 M
+----------------------------------
+1.2 M     Trainable params
+20.0 M    Non-trainable params
+21.2 M    Total params
+84.704    Total estimated model params size (MB)
+/home2/txlx81/new_repos/mv_test1/lib/python3.8/site-packages/torch/utils/data/dataloader.py:478: UserWarning: This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 4, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home2/txlx81/new_repos/mv_test1/lib/python3.8/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home2/txlx81/new_repos/mv_test1/lib/python3.8/site-packages/torch/nn/functional.py:3657: UserWarning: The default behavior for interpolate/upsample with float scale_factor changed in 1.6.0 to align with other frameworks/libraries, and now uses scale_factor directly, instead of relying on the computed output size. If you wish to restore the old behavior, please set recompute_scale_factor=True. See the documentation of nn.Upsample for details. 
+  warnings.warn(
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 1.270 MB of 1.840 MB uploaded (0.000 MB deduped)wandb: \ 1.840 MB of 1.840 MB uploaded (0.000 MB deduped)wandb: | 1.840 MB of 1.853 MB uploaded (0.000 MB deduped)wandb: / 1.840 MB of 1.853 MB uploaded (0.000 MB deduped)wandb: - 1.851 MB of 1.853 MB uploaded (0.000 MB deduped)wandb: \ 1.853 MB of 1.853 MB uploaded (0.000 MB deduped)wandb: | 1.853 MB of 1.853 MB uploaded (0.000 MB deduped)wandb: / 1.853 MB of 1.853 MB uploaded (0.000 MB deduped)wandb: - 1.853 MB of 1.853 MB uploaded (0.000 MB deduped)wandb: \ 1.853 MB of 1.853 MB uploaded (0.000 MB deduped)wandb: | 1.853 MB of 1.853 MB uploaded (0.000 MB deduped)wandb: / 1.853 MB of 1.853 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:               epoch ▁▁▁▁▂▂▂▂▂▂▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▇▇▇▇▇▇████
+wandb:             lr-Adam ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:       test_accuracy ▁
+wandb:             test_f1 ▁
+wandb:           test_loss ▁
+wandb:      test_precision ▁
+wandb:         test_recall ▁
+wandb:     train_acc_epoch ▁▄▅▅▆▆▇▇▆▇▇▇▇▇▇█████
+wandb:      train_acc_step ▁▆▅▃▅▅▅▅▅▃▁█▃▅█▃▆▅▅█▅▆▅▅▃▃▅▅▃▃▃▆▁▅▅▅▃▅▆▆
+wandb:    train_loss_epoch █▃▂▃▂▂▂▂▂▂▂▂▂▁▂▁▁▁▁▁
+wandb:     train_loss_step ▄▂▂▂▂▂▂▂▃▃▃▁█▃▁▃▂▂▂▁▂▂▁█▃▂▂▂▂▃▂▁▃▃▂▂▃▂▂▂
+wandb: trainer/global_step ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇███
+wandb:             val_acc ▁▅▇▄▃▆▂▆▆▇▅▆▇█▆▇▆█▅█
+wandb:        val_accuracy ▁▅▇▄▃▆▂▆▆▇▅▆▇█▆▇▆█▅█
+wandb:              val_f1 ▅▄▇▇▁▇▆▆▇█▆▆▆▇▆▆▄▅▃▆
+wandb:            val_loss ▄▁▁▆▂▁█▅▄▂▂▃▂▁▅▄▂▄▄▆
+wandb:       val_precision ▆▄▇█▁▇█▅▇█▇▆▆▇▆▅▄▅▃▆
+wandb:          val_recall ▆▄▇▇▁▇▆▆▇█▆▆▆▇▆▆▅▅▃▇
+wandb: 
+wandb: Run summary:
+wandb:               epoch 20
+wandb:             lr-Adam 0.001
+wandb:       test_accuracy 0.68255
+wandb:             test_f1 0.49339
+wandb:           test_loss 1.23268
+wandb:      test_precision 0.5575
+wandb:         test_recall 0.4592
+wandb:     train_acc_epoch 0.80018
+wandb:      train_acc_step 0.75
+wandb:    train_loss_epoch 0.8157
+wandb:     train_loss_step 0.60548
+wandb: trainer/global_step 33780
+wandb:             val_acc 0.71124
+wandb:        val_accuracy 0.71085
+wandb:              val_f1 0.47958
+wandb:            val_loss 1.3375
+wandb:       val_precision 0.53459
+wandb:          val_recall 0.44743
+wandb: 
+wandb: Synced serene-spaceship-67: https://wandb.ai/mridulav/stcluster-classifier/runs/1hvdb693
+wandb: Synced 5 W&B file(s), 26 media file(s), 28 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221019_200723-1hvdb693/logs

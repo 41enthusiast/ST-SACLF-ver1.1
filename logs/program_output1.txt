@@ -1,0 +1,47 @@
+Loading train
+Loading val
+Loading test
+starting train
+Initializing model and train,val,test setup
+Collecting val results
+Collecting val results
+Collecting val results
+Collecting val results
+Collecting val results
+Collecting val results
+Collecting val results
+Collecting val results
+Collecting val results
+Collecting val results
+Collecting val results
+Collecting val results
+Collecting val results
+Collecting val results
+Collecting val results
+Collecting val results
+Collecting val results
+Collecting val results
+Collecting val results
+Collecting val results
+Collecting val results
+Initializing model and train,val,test setup
+Collecting test results
+Test visualizations
+torch.Size([3, 518, 1034]) torch.Size([8, 1, 258, 258]) torch.Size([8, 1, 64, 64]) torch.Size([8, 1, 32, 32]) torch.Size([8, 1, 16, 16])
+torch.Size([3, 518, 1034])
+torch.Size([3, 518, 1034])
+torch.Size([3, 518, 1034])
+torch.Size([3, 518, 1034])
+Making the confusion matrix
+Logging the most and least confident images
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       Test metric             DataLoader 0
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+      test_accuracy         0.6825471520423889
+         test_f1            0.49339058995246887
+        test_loss           1.2326751947402954
+     test_precision          0.557502269744873
+       test_recall          0.45919814705848694
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Finished
+
